@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Condicionasi</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Condicionais</h1>
+    {%if Logado == True %}
+
+        <h1>Seja bem-vindo {{usuario.nome}}</h1>
+        <h2>idade: {{usuario.idade}}</h2>
+        <h2>gmail: {{usuario.gmail}}</h2>
+
+    {% else %}
+
+        <p>usuario ainda nao logado!!</p>
+
+    {% endif %}
+
+    {% if nota >= 7%}
+        <h2>Passou ✅</h2>
+
+    {% elif nota >= 4%}
+        <h2>Recuperaçao ❌</h2>
+    
+    {% else %}
+        <h2 style="background-color: brown;">Paga a taxa pra passar ❌</h2>
+    
+    {% endif %}
+</body>
+</html>

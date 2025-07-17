@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Listas</h1>
+    <h2>listas do usuario do sistema</h2>
+
+    <ul>
+        {% for usuario in listasUsuarios %}
+            <li>{{usuario}}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
